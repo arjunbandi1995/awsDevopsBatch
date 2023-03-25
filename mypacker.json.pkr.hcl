@@ -12,7 +12,7 @@ source "amazon-ebs" "aws" {
     ssh_interface = "session_manager"
     communicator = "ssh"
     tags = {
-        Base AMI Name = "satishpacker"
+        Base_AMI_Name = "satishpacker"
     }
 }
 
