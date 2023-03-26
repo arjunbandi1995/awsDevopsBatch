@@ -13,7 +13,7 @@ data "aws_ami" "packer_image" {
 
      filter { 
         name = "name"
-        values = {""}
+        values = {""Packer-image"}
      }
 filter { 
     name = "virtualization-type"
