@@ -29,4 +29,14 @@ jobs:
       - name: Packer Build #- Branches
         run: "packer build ./mypacker.json.pkr.hcl"
         
+      - name: Terraform Apply
+        env:
+          TF_VAR_ec2_name: "${{ github.event.inputs.ec2-name }}"
+        run: |
+         cd module/
+         terraform init
+         terraform validate
+         terraform plan
+         terraform apply -auto-approve
+        
       
