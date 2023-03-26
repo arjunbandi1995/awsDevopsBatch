@@ -3,7 +3,7 @@ source "amazon-ebs" "aws" {
     instance_type = "t2.micro"
     region = "us-east-1"
     run_tags = {
-        Name = "satishpacker"
+        Name = "mypackerami"
     }
     source_ami = "ami-04581fbf744a7d11f"
     ssh_username = "ec2-user"
@@ -12,7 +12,7 @@ source "amazon-ebs" "aws" {
     ssh_interface = "session_manager"
     communicator = "ssh"
     tags = {
-        Base_AMI_Name = "satishpacker"
+        Base_AMI_Name = "mypackerami"
     }
 }
 
