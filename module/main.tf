@@ -9,11 +9,11 @@ resource "aws_instance" "ec2" {
 }
 
 data "aws_ami" "packer_image" {
-     most_recent = "true"
+     most_recent = true
 
      filter { 
         name = "name"
-        values = {"mypackerami"}
+        values = ["mypackerami"]
      }
 filter { 
     name = "virtualization-type"
