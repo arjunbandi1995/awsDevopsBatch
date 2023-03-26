@@ -18,4 +18,8 @@ source "amazon-ebs" "aws" {
 
 build {
     sources = ["source.amazon-ebs.aws"]
+    
+    provisioner "shell" {
+        scripts = ["./AWSCLI.sh"]
+    }
 }
