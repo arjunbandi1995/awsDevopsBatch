@@ -19,7 +19,7 @@ variable "instance" {
 }
 
 variable "instance_type" {
- descripton = "Size of the VM"
+description = "Size of the VM"
 
  default = "t2.micro"
  }
