@@ -1,16 +1,14 @@
 variable "subnet_id" {}
 variable "availability_zone" {}
 
-variable region {
-
+variable "region" {
     description = "AWS Region"
     default = "us-east-1"
 }
 
 variable "stack" {
-description = "Name of the stack"
-default = "Packer-image"
-
+    description = "Name of the stack"
+    default = "Packer-image"
 }
 
 variable "instance" {
@@ -19,7 +17,6 @@ variable "instance" {
 }
 
 variable "instance_type" {
- descripton = "Size of the VM"
-
- default = "t2.micro"
- }
+    description = "Size of the VM"
+    default = "t2.micro"
+}
